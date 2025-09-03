@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-    steps:
+    
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f k8s/deployment.yml
